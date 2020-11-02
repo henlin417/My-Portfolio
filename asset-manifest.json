@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/henlin417/My-Portfolio/static/css/main.fb7c7839.chunk.css",
+    "main.js": "/henlin417/My-Portfolio/static/js/main.4073a19e.chunk.js",
+    "main.js.map": "/henlin417/My-Portfolio/static/js/main.4073a19e.chunk.js.map",
+    "runtime-main.js": "/henlin417/My-Portfolio/static/js/runtime-main.8ed166f5.js",
+    "runtime-main.js.map": "/henlin417/My-Portfolio/static/js/runtime-main.8ed166f5.js.map",
+    "static/js/2.49af4ddc.chunk.js": "/henlin417/My-Portfolio/static/js/2.49af4ddc.chunk.js",
+    "static/js/2.49af4ddc.chunk.js.map": "/henlin417/My-Portfolio/static/js/2.49af4ddc.chunk.js.map",
+    "index.html": "/henlin417/My-Portfolio/index.html",
+    "static/css/main.fb7c7839.chunk.css.map": "/henlin417/My-Portfolio/static/css/main.fb7c7839.chunk.css.map",
+    "static/js/2.49af4ddc.chunk.js.LICENSE.txt": "/henlin417/My-Portfolio/static/js/2.49af4ddc.chunk.js.LICENSE.txt",
+    "static/media/HL-Logo.4b79755f.png": "/henlin417/My-Portfolio/static/media/HL-Logo.4b79755f.png",
+    "static/media/Slide1.8502c53f.jpg": "/henlin417/My-Portfolio/static/media/Slide1.8502c53f.jpg",
+    "static/media/Slide2.6798803e.jpg": "/henlin417/My-Portfolio/static/media/Slide2.6798803e.jpg",
+    "static/media/Slide3.1b863c1d.jpg": "/henlin417/My-Portfolio/static/media/Slide3.1b863c1d.jpg",
+    "static/media/amazon.dc26e48e.png": "/henlin417/My-Portfolio/static/media/amazon.dc26e48e.png",
+    "static/media/contact-form.styles.css": "/henlin417/My-Portfolio/static/media/background.e3dce0c3.webp",
+    "static/media/guess.37b76fdb.png": "/henlin417/My-Portfolio/static/media/guess.37b76fdb.png",
+    "static/media/messenger.603d20ea.png": "/henlin417/My-Portfolio/static/media/messenger.603d20ea.png",
+    "static/media/netflix.ea5fbad8.png": "/henlin417/My-Portfolio/static/media/netflix.ea5fbad8.png",
+    "static/media/profile.857b2edd.png": "/henlin417/My-Portfolio/static/media/profile.857b2edd.png",
+    "static/media/spotify.54a0ddb1.png": "/henlin417/My-Portfolio/static/media/spotify.54a0ddb1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8ed166f5.js",
+    "static/js/2.49af4ddc.chunk.js",
+    "static/css/main.fb7c7839.chunk.css",
+    "static/js/main.4073a19e.chunk.js"
+  ]
+}
