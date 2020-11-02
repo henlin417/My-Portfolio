@@ -1,0 +1,604 @@
+import React from "react";
+import { Timeline, Events, UrlButton, ImageEvent } from "@merc/react-timeline";
+
+// projects
+import L_FbMessenger from "../../assets/img/projects/messenger.png";
+import L_GuessTheNumberGame from "../../assets/img/projects/guess.png";
+import L_Spotify from "../../assets/img/projects/spotify.png";
+import L_Netflix from "../../assets/img/projects/netflix.png";
+import L_Amazon from "../../assets/img/projects/amazon.png";
+import Accordion from "react-bootstrap/Accordion";
+import Card from "react-bootstrap/Card";
+
+// skills
+import Image from "react-bootstrap/Image";
+
+import L_FONTAWESOME from "../../assets/img/skills/FontAwesome_Logo.png";
+import L_HTML5 from "../../assets/img/skills/HTML5_logo.png";
+import L_CSS3 from "../../assets/img/skills/css3.png";
+import L_BOOTSTRAP from "../../assets/img/skills/Bootstrap_Logo.png";
+import L_REACT from "../../assets/img/skills/ReactJS_Logo.png";
+import L_REACT_CONTEXT from "../../assets/img/skills/ReactJS_Logo.png";
+import L_REACT_ROUTER from "../../assets/img/skills/ReactRouter_Logo.png";
+import L_MATERIALUI from "../../assets/img/skills/MaterialUI_Logo.png";
+import L_REACT_BOOTSTRAP from "../../assets/img/skills/ReactBootstrap.png";
+import L_STYLED_COMPONENTS from "../../assets/img/skills/Style_Logo.png";
+import L_NODE_JS from "../../assets/img/skills/Node_Logo.png";
+import L_STRIPE from "../../assets/img/skills/Stripe_Logo.png";
+import L_FIREBASE from "../../assets/img/skills/Firebase_Logo.png";
+import L_GIT from "../../assets/img/skills/Git_Logo.png";
+import L_GITHUB_PAGES from "../../assets/img/skills/Github_Logo.png";
+import L_JAVASCRIPT from "../../assets/img/skills/JavaScript_Logo.png";
+
+import "./projects-timeline.style.css";
+
+const TimeLine = () => {
+  return (
+    <div id="projects">
+      <h1 className="pt-3 text-center font-details-b pb-3">PROJECTS</h1>
+      <Timeline>
+        <Events>
+
+          {/* Project: Guess The Number Game */}
+          <ImageEvent
+            date="3/10/2020"
+            className="text-center"
+            text="Guess The Number Game"
+            src={L_GuessTheNumberGame}
+            alt="Guess The Number Game"
+          >
+            <div className="d-flex justify-content-between flex-column mt-1">
+              <div>
+                <Accordion>
+                  <Card>
+                    <Accordion.Toggle
+                      as={Card.Header}
+                      eventKey="0"
+                      className="p-2 text-center accordian-main"
+                    >
+                      PROJECT DETAILS
+                    </Accordion.Toggle>
+
+                    <Accordion.Collapse eventKey="0" className="text-left">
+                      <Card.Body>
+                        <strong>Description:</strong> The point of this game is to guess a number between 0 - 100
+                        <hr />
+                        <strong>Features:</strong>
+                        <ul className="list-styles pt-1">
+                          <li>Checks inputed number and displays whether 'too low', 'too high', 'correct'</li>
+                          <li>Saves previous guesses</li>
+                          <li>Clear history and reset game</li>
+                        </ul>
+                        <hr />
+                        <strong>Tech used:</strong>
+                        <ul>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_HTML5}
+                                alt="HTML 5"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              HTML5
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_CSS3}
+                                alt="CSS 3"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              CSS3
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_JAVASCRIPT}
+                                alt="Javascript"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Javascript
+                            </span>
+                          </li>
+
+                        </ul>
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
+              </div>
+              <div className="d-flex justify-content-between flex-nowrap text-center">
+                <UrlButton
+                  href="https://github.com/henlin417/Guess-The-Number-Game"
+                  target="_blank"
+                >
+                  SOURCE CODE
+                </UrlButton>
+                <UrlButton
+                  href="https://www.youtube.com/watch?v=exn4o8vA0A8"
+                  target="_blank"
+                >
+                  WATCH VIDEO
+                </UrlButton>
+              </div>
+            </div>
+          </ImageEvent>
+
+          {/* Project: Fb messenger Clone*/}
+          <ImageEvent
+            date="4/9/2020"
+            className="text-center"
+            text="Fb messenger"
+            src={L_FbMessenger}
+            alt="Fb messenger"
+          >
+            <div className="d-flex justify-content-between flex-column mt-1">
+              <div>
+                <Accordion>
+                  <Card>
+                    <Accordion.Toggle
+                      as={Card.Header}
+                      eventKey="0"
+                      className="p-2 text-center accordian-main"
+                    >
+                      PROJECT DETAILS
+                    </Accordion.Toggle>
+
+                    <Accordion.Collapse eventKey="0" className="text-left">
+                      <Card.Body>
+                        <strong>Description:</strong> This is a clone of the facebook messenger app
+                        <hr />
+                        <strong>Features:</strong>
+                        <ul className="list-styles pt-1">
+                          <li>Real-time messaging capability</li>
+                        </ul>
+                        <hr />
+                        <strong>Tech used:</strong>
+                        <ul>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_REACT}
+                                alt="ReactJs"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              ReactJs
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_MATERIALUI}
+                                alt="Material UI"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              Material UI
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_NODE_JS}
+                                alt="Node"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Node
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_FIREBASE}
+                                alt="Firebase"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Firebase
+                            </span>
+                          </li>
+
+                        </ul>
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
+              </div>
+              <div className="d-flex justify-content-between flex-nowrap text-center">
+                <UrlButton
+                  href="https://facebook-messenger-clone-4691f.web.app"
+                  target="_blank"
+                >
+                  LIVE DEMO
+                </UrlButton>
+                <UrlButton
+                  href="https://github.com/henlin417/facebook-messenger-clone"
+                  target="_blank"
+                >
+                  SOURCE CODE
+                </UrlButton>
+                <UrlButton
+                  href="https://www.youtube.com/watch?v=jkCS8e5lMak"
+                  target="_blank"
+                >
+                  WATCH VIDEO
+                </UrlButton>
+              </div>
+            </div>
+          </ImageEvent>
+
+          {/* Project: Spotify Clone */}
+          <ImageEvent
+            date="7/23/2020"
+            className="text-center"
+            text="Spotify Clone"
+            src={L_Spotify}
+            alt="Spotify Clone"
+          >
+            <div className="d-flex justify-content-between flex-column mt-1">
+              <div>
+                <Accordion>
+                  <Card>
+                    <Accordion.Toggle
+                      as={Card.Header}
+                      eventKey="0"
+                      className="p-2 text-center accordian-main"
+                    >
+                      PROJECT DETAILS
+                    </Accordion.Toggle>
+
+                    <Accordion.Collapse eventKey="0" className="text-left">
+                      <Card.Body>
+                        <strong>Description:</strong> This is a clone of the Spotify app
+                        <hr />
+                        <strong>Features:</strong>
+                        <ul className="list-styles pt-1">
+                          <li>Login with spotify account</li>
+                          <li>Retrieve and display information from spotify api</li>
+                          <li>Captures the look and feel of Spotify</li>
+                        </ul>
+                        <hr />
+                        <strong>Tech used:</strong>
+                        <ul>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_REACT}
+                                alt="ReactJs"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              ReactJs
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_MATERIALUI}
+                                alt="Material UI"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              Material UI
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_NODE_JS}
+                                alt="Node"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Node
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_Spotify}
+                                alt="Spotify API"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Spotify API
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_FIREBASE}
+                                alt="Firebase"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Firebase
+                            </span>
+                          </li>
+
+                        </ul>
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
+              </div>
+              <div className="d-flex justify-content-between flex-nowrap text-center">
+                <UrlButton
+                  href="https://spotify-clone-b087a.web.app/"
+                  target="_blank"
+                >
+                  LIVE DEMO
+                </UrlButton>
+                <UrlButton
+                  href="https://github.com/henlin417/Spotify-Clone"
+                  target="_blank"
+                >
+                  SOURCE CODE
+                </UrlButton>
+                <UrlButton
+                  href="https://www.youtube.com/watch?v=hjFuadvSSBI"
+                  target="_blank"
+                >
+                  WATCH VIDEO
+                </UrlButton>
+              </div>
+            </div>
+          </ImageEvent>
+
+          {/* Project: Netflix Clone */}
+          <ImageEvent
+            date="9/3/2020"
+            className="text-center"
+            text="Netflix Clone"
+            src={L_Netflix}
+            alt="Netflix Clone"
+          >
+            <div className="d-flex justify-content-between flex-column mt-1">
+              <div>
+                <Accordion>
+                  <Card>
+                    <Accordion.Toggle
+                      as={Card.Header}
+                      eventKey="0"
+                      className="p-2 text-center accordian-main"
+                    >
+                      PROJECT DETAILS
+                    </Accordion.Toggle>
+
+                    <Accordion.Collapse eventKey="0" className="text-left">
+                      <Card.Body>
+                        <strong>Description:</strong> This is a clone of L_Netflix
+                        <hr />
+                        <strong>Features:</strong>
+                        <ul className="list-styles pt-1">
+                          <li>Scroll feature on movie posters</li>
+                          <li>Hover effect over movie posters</li>
+                          <li>Ability to watch trailers</li>
+                        </ul>
+                        <hr />
+                        <strong>Tech used:</strong>
+                        <ul>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_HTML5}
+                                alt="HTML 5"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              HTML5
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_CSS3}
+                                alt="CSS 3"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              CSS3
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_JAVASCRIPT}
+                                alt="Javascript"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Javascript
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_FONTAWESOME}
+                                alt="Font Awesome"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Font Awesome
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_FIREBASE}
+                                alt="Firebase"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Firebase
+                            </span>
+                          </li>
+
+                        </ul>
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
+              </div>
+              <div className="d-flex justify-content-between flex-nowrap text-center">
+                <UrlButton
+                  href="https://github.com/henlin417/Netflix-Clone"
+                  target="_blank"
+                >
+                  SOURCE CODE
+                </UrlButton>
+                <UrlButton
+                  href="https://www.youtube.com/watch?v=CFGULYxiklw"
+                  target="_blank"
+                >
+                  WATCH VIDEO
+                </UrlButton>
+              </div>
+            </div>
+          </ImageEvent>
+
+          {/* Project: Amazon Clone */}
+          <ImageEvent
+            date="10/20/2020"
+            className="text-center"
+            text="Amazon Clone"
+            src={L_Amazon}
+            alt="Amazon Clone"
+          >
+            <div className="d-flex justify-content-between flex-column mt-1">
+              <div>
+                <Accordion>
+                  <Card>
+                    <Accordion.Toggle
+                      as={Card.Header}
+                      eventKey="0"
+                      className="p-2 text-center accordian-main"
+                    >
+                      PROJECT DETAILS
+                    </Accordion.Toggle>
+
+                    <Accordion.Collapse eventKey="0" className="text-left">
+                      <Card.Body>
+                        <strong>Description:</strong> This is a clone of Amazon
+                        <hr />
+                        <strong>Features:</strong>
+                        <ul className="list-styles pt-1">
+                          <li>Sign in with user authentication</li>
+                          <li>Add products to basket</li>
+                          <li>Checkout function with credit card</li>
+                          <li>Order history</li>
+                        </ul>
+                        <hr />
+                        <strong>Tech used:</strong>
+                        <ul>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_REACT}
+                                alt="ReactJs"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              ReactJs
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_MATERIALUI}
+                                alt="Material UI"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              Material UI
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_NODE_JS}
+                                alt="Node"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Node
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_REACT_CONTEXT}
+                                alt="React Context API"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              React Context API
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_STRIPE}
+                                alt="Stripe"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Stripe
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_FIREBASE}
+                                alt="Firebase"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Firebase
+                            </span>
+                          </li>
+
+                        </ul>
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
+              </div>
+              <div className="d-flex justify-content-between flex-nowrap text-center">
+                <UrlButton
+                  href="https://clone-8888e.web.app"
+                  target="_blank"
+                >
+                  LIVE DEMO
+                </UrlButton>
+                <UrlButton
+                  href="https://github.com/henlin417/Amazon-clone"
+                  target="_blank"
+                >
+                  SOURCE CODE
+                </UrlButton>
+                <UrlButton
+                  href="https://www.youtube.com/watch?v=Uo1DqZx2ulY"
+                  target="_blank"
+                >
+                  WATCH VIDEO
+                </UrlButton>
+              </div>
+            </div>
+          </ImageEvent>
+
+
+        </Events>
+      </Timeline>
+    </div>
+  );
+};
+
+export default TimeLine;
