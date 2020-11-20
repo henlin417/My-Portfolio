@@ -13,6 +13,10 @@ import L_FIREBASE from "../../assets/img/skills/Firebase_Logo.png";
 import L_GIT from "../../assets/img/skills/Git_Logo.png";
 import L_GITHUB_PAGES from "../../assets/img/skills/Github_Logo.png";
 import L_JAVASCRIPT from "../../assets/img/skills/JavaScript_Logo.png";
+import L_MONGODB from "../../assets/img/skills/MongoDB_Logo.jpg";
+import L_HEROKU from "../../assets/img/skills/Heroku_Logo.png";
+import L_REDUX from "../../assets/img/skills/Redux_Logo.png";
+
 
 
 export const skills = {
@@ -60,6 +64,12 @@ export const skills = {
             skillName: "React Router",
         },
         {
+            link: "https://redux.js.org/",
+            imgAltText: "Redux",
+            imgSrc: L_REDUX,
+            skillName: "Redux",
+        },
+        {
             link: "https://material-ui.com/",
             imgAltText: "Material-UI",
             imgSrc: L_MATERIALUI,
@@ -101,6 +111,12 @@ export const skills = {
             imgSrc: L_GITHUB_PAGES,
             skillName: "GitHub Pages",
         },
+        {
+            link: "https://dashboard.heroku.com/",
+            imgAltText: "Heroku",
+            imgSrc: L_HEROKU,
+            skillName: "Heroku",
+        },
     ],
     programmingLanguages: [
         {
@@ -116,6 +132,12 @@ export const skills = {
             imgAltText: "Firebase",
             imgSrc: L_FIREBASE,
             skillName: "Firebase",
+        },
+        {
+            link: "https://www.mongodb.com/",
+            imgAltText: "MongoDB",
+            imgSrc: L_MONGODB,
+            skillName: "MongoDB",
         },
     ],
     versionControl: [

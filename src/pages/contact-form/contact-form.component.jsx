@@ -15,7 +15,7 @@ const ContactForm = () => {
                         <div className="m-2">
                             <a href="mailto:henryling66@gmail.com" target="_blank" rel="noopener noreferrer">
                                 <Button variant="outline-danger" title="henryling66@gmail.com">
-                                    <i className="fas fa-envelope-square"></i> Email Me
+                                    <i className="fas fa-envelope-square"></i> henryling66@gmail.com
                 </Button>
                             </a>
                         </div>
@@ -42,9 +42,16 @@ const ContactForm = () => {
                             </a>
                         </div>
                         <div className="m-2">
-                            <a href="tel:+4086219402" target="_blank" rel="noopener noreferrer">
+                            <a href="" target="_blank" rel="noopener noreferrer">
+                                <Button id="youtube-btn" variant="outline-info" title="Lets code together!">
+                                    <i class="fas fa-newspaper"></i> Resume
+                </Button>
+                            </a>
+                        </div>
+                        <div className="m-2">
+                            <a onclick="window.open('tel:408 621 9402') " target="_blank" rel="noopener noreferrer">
                                 <Button variant="outline-info" title="Call or text me at (408)621-9402">
-                                    <i className="fas fa-phone"></i> Phone Number
+                                    <i className="fas fa-phone"></i>(408)621-9402
                 </Button>
                             </a>
                         </div>

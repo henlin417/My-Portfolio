@@ -7,6 +7,8 @@ import L_GuessTheNumberGame from "../../assets/img/projects/guess.png";
 import L_Spotify from "../../assets/img/projects/spotify.png";
 import L_Netflix from "../../assets/img/projects/netflix.png";
 import L_Amazon from "../../assets/img/projects/amazon.png";
+import L_Medium from "../../assets/img/projects/medium.png";
+import L_Carmel from "../../assets/img/projects/carmeldrugstore.png";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 
@@ -16,19 +18,16 @@ import Image from "react-bootstrap/Image";
 import L_FONTAWESOME from "../../assets/img/skills/FontAwesome_Logo.png";
 import L_HTML5 from "../../assets/img/skills/HTML5_logo.png";
 import L_CSS3 from "../../assets/img/skills/css3.png";
-import L_BOOTSTRAP from "../../assets/img/skills/Bootstrap_Logo.png";
 import L_REACT from "../../assets/img/skills/ReactJS_Logo.png";
 import L_REACT_CONTEXT from "../../assets/img/skills/ReactJS_Logo.png";
-import L_REACT_ROUTER from "../../assets/img/skills/ReactRouter_Logo.png";
 import L_MATERIALUI from "../../assets/img/skills/MaterialUI_Logo.png";
-import L_REACT_BOOTSTRAP from "../../assets/img/skills/ReactBootstrap.png";
-import L_STYLED_COMPONENTS from "../../assets/img/skills/Style_Logo.png";
 import L_NODE_JS from "../../assets/img/skills/Node_Logo.png";
 import L_STRIPE from "../../assets/img/skills/Stripe_Logo.png";
 import L_FIREBASE from "../../assets/img/skills/Firebase_Logo.png";
-import L_GIT from "../../assets/img/skills/Git_Logo.png";
-import L_GITHUB_PAGES from "../../assets/img/skills/Github_Logo.png";
 import L_JAVASCRIPT from "../../assets/img/skills/JavaScript_Logo.png";
+import L_REDUX from "../../assets/img/skills/Redux_Logo.png";
+import L_MONGODB from "../../assets/img/skills/MongoDB_Logo.jpg";
+import L_HEROKU from "../../assets/img/skills/Heroku_Logo.png";
 
 import "./projects-timeline.style.css";
 
@@ -594,6 +593,215 @@ const TimeLine = () => {
             </div>
           </ImageEvent>
 
+          {/* Project: Medium */}
+          <ImageEvent
+            date="10/25/2020"
+            className="text-center"
+            text="Medium"
+            src={L_Medium}
+            alt="Medium"
+          >
+            <div className="d-flex justify-content-between flex-column mt-1">
+              <div>
+                <Accordion>
+                  <Card>
+                    <Accordion.Toggle
+                      as={Card.Header}
+                      eventKey="0"
+                      className="p-2 text-center accordian-main"
+                    >
+                      PROJECT DETAILS
+                    </Accordion.Toggle>
+
+                    <Accordion.Collapse eventKey="0" className="text-left">
+                      <Card.Body>
+                        <strong>Description:</strong> These are the articles I have written on Medium to showcase what I have discovered while learning web design.
+                        <hr />
+                        <strong>Features:</strong>
+                        <ul className="list-styles pt-1">
+                          <li>UI Design Trends</li>
+                          <li>Accessibility: Why is it important?</li>
+                          <li>React Context API For Dummies</li>
+                        </ul>
+                        <hr />
+                        <strong>Tech used:</strong>
+                        <ul>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_Medium}
+                                alt="Medium"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              Medium
+                            </span>
+                          </li>
+
+                        </ul>
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
+              </div>
+              <div className="d-flex justify-content-between flex-nowrap text-center">
+                <UrlButton
+                  href="https://henryling66.medium.com/"
+                  target="_blank"
+                >
+                  ARTICLES
+                </UrlButton>
+              </div>
+            </div>
+          </ImageEvent>
+
+          {/* Project: Carmel Drug Store */}
+          <ImageEvent
+            date="11/4/2020"
+            className="text-center"
+            text="Carmel Drug Store"
+            src={L_Carmel}
+            alt="Carmel Drug Store"
+          >
+            <div className="d-flex justify-content-between flex-column mt-1">
+              <div>
+                <Accordion>
+                  <Card>
+                    <Accordion.Toggle
+                      as={Card.Header}
+                      eventKey="0"
+                      className="p-2 text-center accordian-main"
+                    >
+                      PROJECT DETAILS
+                    </Accordion.Toggle>
+
+                    <Accordion.Collapse eventKey="0" className="text-left">
+                      <Card.Body>
+                        <strong>Description:</strong> This is a fully functioning E-Commerce site for Carmel Drug Store, an independent pharmacy located on Ocean Ave 3NW San Carlos, Carmel, CA 93921. Their original site needed to be revamped.
+                        <hr />
+                        <strong>Features:</strong>
+                        <ul className="list-styles pt-1">
+                          <li>Product list and product details page</li>
+                          <li>Sidebar with categories</li>
+                          <li>Product search bar</li>
+                          <li>Shopping cart function (add to cart, checkout, payment, shipping info, summary of order)</li>
+                          <li>Payment with credit card or paypal</li>
+                          <li>Manage products(create, update, upload images)</li>
+                          <li>Manage orders</li>
+                        </ul>
+                        <hr />
+                        <strong>Tech used:</strong>
+                        <ul>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_HTML5}
+                                alt="HTML 5"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              HTML5
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_CSS3}
+                                alt="CSS 3"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              CSS3
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_JAVASCRIPT}
+                                alt="Javascript"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Javascript
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_REACT}
+                                alt="ReactJs"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              ReactJs
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_REDUX}
+                                alt="Redux"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              Redux
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_NODE_JS}
+                                alt="Node"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Node
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_MONGODB}
+                                alt="React Context API"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              MongoDB
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_HEROKU}
+                                alt="Stripe"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Heroku
+                            </span>
+                          </li>
+                        </ul>
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
+              </div>
+              <div className="d-flex justify-content-between flex-nowrap text-center">
+                <UrlButton
+                  href=""
+                  target="_blank"
+                >
+                  LIVE DEMO
+                </UrlButton>
+                <UrlButton
+                  href="https://github.com/henlin417/carmel-drug-store"
+                  target="_blank"
+                >
+                  SOURCE CODE
+                </UrlButton>
+              </div>
+            </div>
+          </ImageEvent>
 
         </Events>
       </Timeline>
