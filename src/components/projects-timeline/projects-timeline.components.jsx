@@ -448,6 +448,12 @@ const TimeLine = () => {
               </div>
               <div className="d-flex justify-content-between flex-nowrap text-center">
                 <UrlButton
+                  href="https://henlin417.github.io/netflix.github.io/"
+                  target="_blank"
+                >
+                  LIVE DEMO
+                </UrlButton>
+                <UrlButton
                   href="https://github.com/henlin417/Netflix-Clone"
                   target="_blank"
                 >
