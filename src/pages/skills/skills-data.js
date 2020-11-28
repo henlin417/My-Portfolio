@@ -16,6 +16,7 @@ import L_JAVASCRIPT from "../../assets/img/skills/JavaScript_Logo.png";
 import L_MONGODB from "../../assets/img/skills/MongoDB_Logo.jpg";
 import L_HEROKU from "../../assets/img/skills/Heroku_Logo.png";
 import L_REDUX from "../../assets/img/skills/Redux_Logo.png";
+import L_TENSOR from "../../assets/img/skills/TensorFlow_Logo.png";
 
 
 
@@ -138,6 +139,12 @@ export const skills = {
             imgAltText: "MongoDB",
             imgSrc: L_MONGODB,
             skillName: "MongoDB",
+        },
+        {
+            link: "https://www.tensorflow.org/",
+            imgAltText: "Tensorflow",
+            imgSrc: L_TENSOR,
+            skillName: "Tensorflow",
         },
     ],
     versionControl: [

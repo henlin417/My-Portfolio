@@ -20,9 +20,9 @@ const ContactForm = () => {
                             </a>
                         </div>
                         <div className="m-2">
-                            <a href="]" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/in/know-henry-ling/" target="_blank" rel="noopener noreferrer">
                                 <Button variant="outline-primary" title="Visit my LinkenIn">
-                                    <i className="fab fa-linkedin"></i> LinkedIn ****
+                                    <i className="fab fa-linkedin"></i> LinkedIn
                 </Button>
                             </a>
                         </div>

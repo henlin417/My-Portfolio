@@ -4,11 +4,12 @@ import { Timeline, Events, UrlButton, ImageEvent } from "@merc/react-timeline";
 // projects
 import L_FbMessenger from "../../assets/img/projects/messenger.png";
 import L_GuessTheNumberGame from "../../assets/img/projects/guess.png";
-import L_Spotify from "../../assets/img/projects/spotify.png";
 import L_Netflix from "../../assets/img/projects/netflix.png";
 import L_Amazon from "../../assets/img/projects/amazon.png";
 import L_Medium from "../../assets/img/projects/medium.png";
 import L_Carmel from "../../assets/img/projects/carmeldrugstore.png";
+import L_Tensor from "../../assets/img/projects/tensorflow.png";
+import L_Pachira from "../../assets/img/projects/pachiradigital.png";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 
@@ -28,6 +29,7 @@ import L_JAVASCRIPT from "../../assets/img/skills/JavaScript_Logo.png";
 import L_REDUX from "../../assets/img/skills/Redux_Logo.png";
 import L_MONGODB from "../../assets/img/skills/MongoDB_Logo.jpg";
 import L_HEROKU from "../../assets/img/skills/Heroku_Logo.png";
+import L_TENSOR from "../../assets/img/skills/TensorFlow_Logo.png";
 
 import "./projects-timeline.style.css";
 
@@ -37,6 +39,172 @@ const TimeLine = () => {
       <h1 className="pt-3 text-center font-details-b pb-3">PROJECTS</h1>
       <Timeline>
         <Events>
+           {/* Project: Pachira Digital */}
+           <ImageEvent
+            date="11/2/2019"
+            className="text-center"
+            text="Pachira Digital"
+            src={L_Pachira}
+            alt="Pachira Digital"
+          >
+            <div className="d-flex justify-content-between flex-column mt-1">
+              <div>
+                <Accordion>
+                  <Card>
+                    <Accordion.Toggle
+                      as={Card.Header}
+                      eventKey="0"
+                      className="p-2 text-center accordian-main"
+                    >
+                      PROJECT DETAILS
+                    </Accordion.Toggle>
+
+                    <Accordion.Collapse eventKey="0" className="text-left">
+                      <Card.Body>
+                        <strong>Description:</strong> This is a landing page with modern UI design.
+                        <hr />
+                        <strong>Features:</strong>
+                        <ul className="list-styles pt-1">
+                          <li>Can be used for small business & freelancer or email marketing to attract future clients.</li>
+                          <li>Email address collected by Formspree & Mailchimp may be used for future email campaigns.</li>
+                        </ul>
+                        <hr />
+                        <strong>Tech used:</strong>
+                        <ul>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_HTML5}
+                                alt="HTML 5"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              HTML5
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_CSS3}
+                                alt="CSS 3"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              CSS3
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_JAVASCRIPT}
+                                alt="Javascript"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Javascript
+                            </span>
+                          </li>
+
+                        </ul>
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
+              </div>
+              <div className="d-flex justify-content-between flex-nowrap text-center">
+                <UrlButton
+                  href="https://henlin417.github.io/pachiradigital.github.io/"
+                  target="_blank"
+                >
+                  LIVE DEMO
+                </UrlButton>
+                <UrlButton
+                  href="https://github.com/henlin417/pachiradigital.github.io"
+                  target="_blank"
+                >
+                  SOURCE CODE
+                </UrlButton>
+              </div>
+            </div>
+          </ImageEvent>
+
+          {/* Project: AI Object Detector */}
+          <ImageEvent
+            date="11/17/2019"
+            className="text-center"
+            text="AI Object Detector"
+            src={L_Tensor}
+            alt="AI Object Detector"
+          >
+            <div className="d-flex justify-content-between flex-column mt-1">
+              <div>
+                <Accordion>
+                  <Card>
+                    <Accordion.Toggle
+                      as={Card.Header}
+                      eventKey="0"
+                      className="p-2 text-center accordian-main"
+                    >
+                      PROJECT DETAILS
+                    </Accordion.Toggle>
+
+                    <Accordion.Collapse eventKey="0" className="text-left">
+                      <Card.Body>
+                        <strong>Description:</strong> This is a real time object detection app.
+                        <hr />
+                        <strong>Features:</strong>
+                        <ul className="list-styles pt-1">
+                          <li>Ability to detect a variety of objects(e.g. phone, person, bottle)</li>
+                          <li>Draws a rectangle around object and labels</li>
+                        </ul>
+                        <hr />
+                        <strong>Tech used:</strong>
+                        <ul>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_REACT}
+                                alt="React"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              React.JS
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_TENSOR}
+                                alt="Tensorflow"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              Tensorflow
+                            </span>
+                          </li>
+
+                        </ul>
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
+              </div>
+              <div className="d-flex justify-content-between flex-nowrap text-center">
+                <UrlButton
+                  href="https://github.com/henlin417/AI-Object-Detection"
+                  target="_blank"
+                >
+                  SOURCE CODE
+                </UrlButton>
+                <UrlButton
+                  href="https://www.youtube.com/watch?v=siuCR5CWqLg"
+                  target="_blank"
+                >
+                  WATCH VIDEO
+                </UrlButton>
+              </div>
+            </div>
+          </ImageEvent>
 
           {/* Project: Guess The Number Game */}
           <ImageEvent
@@ -113,7 +281,13 @@ const TimeLine = () => {
               </div>
               <div className="d-flex justify-content-between flex-nowrap text-center">
                 <UrlButton
-                  href="https://github.com/henlin417/Guess-The-Number-Game"
+                  href="https://henlin417.github.io/guess.github.io/"
+                  target="_blank"
+                >
+                  LIVE DEMO
+                </UrlButton>
+                <UrlButton
+                  href="https://github.com/henlin417/guess.github.io"
                   target="_blank"
                 >
                   SOURCE CODE
@@ -233,124 +407,6 @@ const TimeLine = () => {
             </div>
           </ImageEvent>
 
-          {/* Project: Spotify Clone */}
-          <ImageEvent
-            date="7/23/2020"
-            className="text-center"
-            text="Spotify Clone"
-            src={L_Spotify}
-            alt="Spotify Clone"
-          >
-            <div className="d-flex justify-content-between flex-column mt-1">
-              <div>
-                <Accordion>
-                  <Card>
-                    <Accordion.Toggle
-                      as={Card.Header}
-                      eventKey="0"
-                      className="p-2 text-center accordian-main"
-                    >
-                      PROJECT DETAILS
-                    </Accordion.Toggle>
-
-                    <Accordion.Collapse eventKey="0" className="text-left">
-                      <Card.Body>
-                        <strong>Description:</strong> This is a clone of the Spotify app
-                        <hr />
-                        <strong>Features:</strong>
-                        <ul className="list-styles pt-1">
-                          <li>Login with spotify account</li>
-                          <li>Retrieve and display information from spotify api</li>
-                          <li>Captures the look and feel of Spotify</li>
-                        </ul>
-                        <hr />
-                        <strong>Tech used:</strong>
-                        <ul>
-                          <li>
-                            <span className="p-2">
-                              <Image
-                                src={L_REACT}
-                                alt="ReactJs"
-                                rounded
-                                className="image-style m-1"
-                              ></Image>{" "}
-                              ReactJs
-                            </span>
-                          </li>
-                          <li>
-                            <span className="p-2">
-                              <Image
-                                src={L_MATERIALUI}
-                                alt="Material UI"
-                                rounded
-                                className="image-style m-1"
-                              ></Image>{" "}
-                              Material UI
-                            </span>
-                          </li>
-                          <li>
-                            <span className="p-2">
-                              <Image
-                                src={L_NODE_JS}
-                                alt="Node"
-                                rounded
-                                className="image-style1 m-1"
-                              ></Image>{" "}
-                              Node
-                            </span>
-                          </li>
-                          <li>
-                            <span className="p-2">
-                              <Image
-                                src={L_Spotify}
-                                alt="Spotify API"
-                                rounded
-                                className="image-style1 m-1"
-                              ></Image>{" "}
-                              Spotify API
-                            </span>
-                          </li>
-                          <li>
-                            <span className="p-2">
-                              <Image
-                                src={L_FIREBASE}
-                                alt="Firebase"
-                                rounded
-                                className="image-style1 m-1"
-                              ></Image>{" "}
-                              Firebase
-                            </span>
-                          </li>
-
-                        </ul>
-                      </Card.Body>
-                    </Accordion.Collapse>
-                  </Card>
-                </Accordion>
-              </div>
-              <div className="d-flex justify-content-between flex-nowrap text-center">
-                <UrlButton
-                  href="https://spotify-clone-b087a.web.app/"
-                  target="_blank"
-                >
-                  LIVE DEMO
-                </UrlButton>
-                <UrlButton
-                  href="https://github.com/henlin417/Spotify-Clone"
-                  target="_blank"
-                >
-                  SOURCE CODE
-                </UrlButton>
-                <UrlButton
-                  href="https://www.youtube.com/watch?v=hjFuadvSSBI"
-                  target="_blank"
-                >
-                  WATCH VIDEO
-                </UrlButton>
-              </div>
-            </div>
-          </ImageEvent>
-
           {/* Project: Netflix Clone */}
           <ImageEvent
             date="9/3/2020"
@@ -373,7 +429,7 @@ const TimeLine = () => {
 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong> This is a clone of L_Netflix
+                        <strong>Description:</strong> This is a clone of Netflix
                         <hr />
                         <strong>Features:</strong>
                         <ul className="list-styles pt-1">
