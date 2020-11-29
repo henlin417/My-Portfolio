@@ -22,9 +22,9 @@ const About = () => {
             <Col xs={12} md={6}>
               <Row className=" align-items-start p-2 my-details rounded">
                 Hi! I am <strong>&nbsp;Henry Ling</strong>
-                <br />A passionate programmer, born and raised in the Bay Area. I am a  front-end developer with  with HTML, CSS, React,js, and Node.js as my tech stack.
+                <br />A passionate programmer, born and raised in the Bay Area. I am a  front-end/full-stack developer with  with HTML, CSS, React,js, and Node.js as my tech stack.
                 <br /> <br />
-                I believe that in the current information age, one's education is determined by grit and determination. Using a variety of online resources, I started my self taught journey at the beginning of 2020.
+                I believe that in the current information age, one's education is determined by grit and determination. Using a variety of online resources, I was able to kickstart my programming journey.
                 <br /> <br />
                 The purpose of this portfolio is to showcase my ability to solve problems and build scalable products. 
                 <br /> 
